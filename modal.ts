@@ -77,6 +77,7 @@ export class SearchModal extends Modal {
             event.preventDefault();
         }
         else if (event.key === "ArrowDown") {
+            event.preventDefault();
             const selected = document.getElementsByClassName("is-selected")[0];
             if (selected) {
                 const next = selected.nextElementSibling as HTMLDivElement;
@@ -87,6 +88,7 @@ export class SearchModal extends Modal {
             }
         }
         else if (event.key === "ArrowUp") {
+            event.preventDefault();
             const selected = document.getElementsByClassName("is-selected")[0];
             if (selected) {
                 const prev = selected.previousElementSibling as HTMLDivElement;
