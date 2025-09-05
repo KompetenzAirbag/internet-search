@@ -1,0 +1,10 @@
+    {
+        "id": "internet-searcher",
+        "name": "Internet Searcher",
+        "version": "1.0.0",
+        "minAppVersion": "0.15.0",
+        "description": "Searches the internet from within Obsidian",
+        "author": "KompetenzAirbag",
+        "authorUrl": "https://github.com/KompetenzAirbag",
+        "isDesktopOnly": false
+    }
