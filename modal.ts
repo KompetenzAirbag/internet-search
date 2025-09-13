@@ -34,7 +34,9 @@ export class SearchModal extends Modal {
         this.input.autocapitalize = "off";
         this.input.spellcheck = false;
         this.input.type = "text";
-        this.input.placeholder = "Search the web";
+        this.input.placeholder = this.mode == "web" ? "Search the web" : "Search Wikipedia";
+
+        console.log(this.mode)
 
         this.input.onkeydown = async (event) => {
             await this.onkeyDown(event, this.input.value);
